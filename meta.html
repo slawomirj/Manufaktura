@@ -31,20 +31,20 @@ var mm2= document.getElementById("Marka").value;
 var km2= document.getElementById("Kod").value;
 var xm3= document.getElementById("Nazwa").value;
 var spaceCount = (xm3.split(" ").length -1);
-var huj = xm3.split(" ");
+var mmj = xm3.split(" ");
 var mm3 = xm3.replace(/ /g,"");
 if (spaceCount <= 2 & km2.length == 0)
 {document.getElementById("meta_2").innerHTML = ""+mm1+" "+mm2+" "+mm3+", "+mm1+" "+mm3+", "+mm2+" "+mm3+", "+xm3+", "+mm3+"";}
 else if (spaceCount == 3 & km2.length == 0)
-{document.getElementById("meta_2").innerHTML = ""+mm1+" "+mm2+" "+mm3+", "+mm1+" "+mm3+", "+mm2+" "+mm3+", "+huj[0]+" "+huj[1]+""+huj[2]+", "+xm3+", "+mm3+"";}
+{document.getElementById("meta_2").innerHTML = ""+mm1+" "+mm2+" "+mm3+", "+mm1+" "+mm3+", "+mm2+" "+mm3+", "+mmj[0]+" "+mmj[1]+""+mmj[2]+", "+xm3+", "+mm3+"";}
 else if (spaceCount == 4 & km2.length == 0)
-{document.getElementById("meta_2").innerHTML = ""+mm1+" "+mm2+" "+mm3+", "+mm1+" "+mm3+", "+mm2+" "+mm3+", "+huj[0]+" "+huj[1]+""+huj[2]+""+huj[3]+", "+huj[0]+" "+huj[1]+" "+huj[2]+""+huj[3]+", "+xm3+", "+mm3+""; }
+{document.getElementById("meta_2").innerHTML = ""+mm1+" "+mm2+" "+mm3+", "+mm1+" "+mm3+", "+mm2+" "+mm3+", "+mmj[0]+" "+mmj[1]+""+mmj[2]+""+mmj[3]+", "+mmj[0]+" "+mmj[1]+" "+mmj[2]+""+mmj[3]+", "+xm3+", "+mm3+""; }
 else if (spaceCount == 2 & km2.length != 0)
 {document.getElementById("meta_2").innerHTML = ""+mm1+" "+mm2+" "+mm3+" "+km2+", "+mm1+" "+mm3+" "+km2+", "+mm2+" "+mm3+" "+km2+", "+xm3+", "+mm3+" "+km2+"";}
 else if (spaceCount == 3 & km2.length != 0)
-{document.getElementById("meta_2").innerHTML = ""+mm1+" "+mm2+" "+mm3+" "+km2+", "+mm1+" "+mm3+" "+km2+", "+mm2+" "+mm3+" "+km2+", "+huj[0]+" "+huj[1]+""+huj[2]+" "+km2+", "+xm3+", "+mm3+" "+km2+""; }
+{document.getElementById("meta_2").innerHTML = ""+mm1+" "+mm2+" "+mm3+" "+km2+", "+mm1+" "+mm3+" "+km2+", "+mm2+" "+mm3+" "+km2+", "+mmj[0]+" "+mmj[1]+""+mmj[2]+" "+km2+", "+xm3+", "+mm3+" "+km2+""; }
 else if (spaceCount == 4 & km2.length != 0)
-{document.getElementById("meta_2").innerHTML = ""+mm1+" "+mm2+" "+mm3+" "+km2+", "+mm1+" "+mm3+" "+km2+", "+mm2+" "+mm3+" "+km2+", "+huj[0]+" "+huj[1]+""+huj[2]+""+huj[3]+" "+km2+", "+huj[0]+" "+huj[1]+" "+huj[2]+""+huj[3]+" "+km2+", "+xm3+", "+mm3+" "+km2+""; }
+{document.getElementById("meta_2").innerHTML = ""+mm1+" "+mm2+" "+mm3+" "+km2+", "+mm1+" "+mm3+" "+km2+", "+mm2+" "+mm3+" "+km2+", "+mmj[0]+" "+mmj[1]+""+mmj[2]+""+mmj[3]+" "+km2+", "+mmj[0]+" "+mmj[1]+" "+mmj[2]+""+mmj[3]+" "+km2+", "+xm3+", "+mm3+" "+km2+""; }
 else if (spaceCount =>5)
 {alert ("tryb nie obsługiwany")}
 
