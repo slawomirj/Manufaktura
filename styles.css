@@ -179,3 +179,10 @@ td>a {
 	color:black;
 	
 }
+.code{
+	padding: 10px;
+	background-color: black;
+	color:white!important;
+	font-family: 'Inconsolata', monospace;
+	text-align: left;
+}
